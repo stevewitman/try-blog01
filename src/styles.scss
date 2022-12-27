@@ -1,1 +1,248 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background-color: #EEEEEE;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.markdown {
+  // H1 - Title
+  // H2 - Heading
+  // H3 - Sub-Heading
+  // H4 - Code block filename / title
+  // H5 - Terminal commands
+  // H6 - Tag
+  // *...* - Highlight
+
+  &:first-child {
+    color: #101010;
+  }
+
+  img {
+    position: relative;
+    top: -18px;
+    margin-right: 16px;
+    // margin-bottom: 8px;
+    float: left;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  pre,
+  blockquote,
+  hr {
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  p+h4,
+  p+h5,
+  p+h6,
+  p+code,
+  p+blockquote {
+    margin-top: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  h2 {
+    color: #101010;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    text-transform: none;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-top: 28px;
+    margin-bottom: 18px;
+  }
+
+  h4 {
+    // using for file names on code blocks
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 6px 20px;
+    border-radius: 6px 6px 0 0;
+    background-color: #039BE5;
+    color: white;
+    margin-bottom: 0;
+  }
+
+  pre {
+    font-family: Consolas, monospace;
+    letter-spacing: 0.5px;
+    border: 1px solid #E0E0E0;
+    padding: 1rem;
+    background-color: #039ae511;
+    white-space: pre-wrap;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px
+  }
+
+  h4+pre {
+    border-radius: 0 0 6px 6px;
+  }
+
+  h5 {
+    // using for terminal commands
+    font-family: Consolas, monospace;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #404040;
+    color: white;
+
+    &:before {
+      color: #77F94E;
+      font-weight: 900;
+      content: "\203A";
+      padding-right: 10px;
+    }
+  }
+
+  h6 {
+    // Tags
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 3px 18px;
+    border-radius: 18px;
+    background-color: #FF6D00;
+    color: white;
+    margin: 0px 3px 12px 3px;
+
+    a {
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:first-of-type {
+      // Author name
+      display: block;
+      position: relative;
+      top: -13px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 1px;
+      padding: 0;
+      margin: 0;
+      border-radius: 0;
+      background-color: transparent;
+
+      a {
+        color: #039BE5;
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #303030;
+    margin-bottom: 16px;
+
+    code {
+      font-family: Consolas, monospace;
+      letter-spacing: 0.5px;
+      padding: 6px;
+      border-radius: 5px;
+      background-color: #F0F0F0;
+      color: #039BE5;
+    }
+  }
+
+  ul {
+    padding-left: 16px;
+  }
+
+  li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #303030;
+    margin-bottom: 16px;
+
+    p {
+      position: relative;
+      left: 4px;
+    }
+
+    &::marker {
+      color: #FF6D00;
+    }
+  }
+
+  blockquote {
+    margin: 0 0 30px 0;
+    padding: 24px 24px 1px 24px;
+    border-left: 8px solid #FF6D00;
+    background-color: #FF6D0011;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid;
+  }
+
+  em {
+    font-style: normal;
+    padding: 1px 3px;
+    border-radius: 3px;
+    background-color: #ffff66;
+    color: black;
+  }
+
+  hr {
+    margin-top: 24px;
+    border-top: 1px solid #C0C0C0;
+  }
+}
